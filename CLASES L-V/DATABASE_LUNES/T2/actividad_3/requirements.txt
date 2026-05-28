@@ -1,0 +1,15 @@
+fastapi
+uvicornss
+mysql-connector-python
+sqlalchemy
+pydantic
+pytest
+pytest-asyncio
+httpx
+alembic
+python-dotenv
+passlib
+bcrypt
+python-jose
+pytest-cov
+coverage
