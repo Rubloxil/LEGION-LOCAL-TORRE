@@ -13,11 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
-
       <SearchBar />
-
       <Carousel />
-
       <Login />
 
       
@@ -31,13 +28,13 @@ function App() {
         }}
       >
         <Card
-          titulo="Producto 1"
-          descripcion="Descripción del producto"
+          titulo="GATOMAN"
+          descripcion="Es un gato con corbata y parece ser humano pero es un gato"
         />
 
         <Card
-          titulo="Producto 2"
-          descripcion="Descripción del producto"
+          titulo="POSIGATO"
+          descripcion="Es un posillo en forma de gato y en un posillo yt no un gato "
         />
       </div>
 

@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>Mi Sitio Web</h2>
+      <h2>GATOS GALACTICOZ</h2>
 
       <ul>
         <li>Inicio</li>
