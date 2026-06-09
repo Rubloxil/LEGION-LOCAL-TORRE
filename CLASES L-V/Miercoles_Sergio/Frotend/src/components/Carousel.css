@@ -1,0 +1,19 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.carousel img {
+  width: 800px;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.carousel button {
+  font-size: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
