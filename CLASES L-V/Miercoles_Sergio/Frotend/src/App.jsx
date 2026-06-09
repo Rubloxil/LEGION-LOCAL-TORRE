@@ -1,44 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
-import Login from "./components/Login";
-import SearchBar from "./components/SearchBar";
-import Card from "./components/Card";
-
-
-import "./components/Navbar.css";
-import "./components/Login.css";
-import "./components/Card.css";
+import Inicio from "./components/Inicio";
+import Productos from "./components/Productos";
+import Contacto from "./components/Contacto";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      <SearchBar />
-      <Carousel />
-      <Login />
 
-      
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "20px",
-          marginTop: "30px"
-        }}
-      >
-        <Card
-          titulo="GATOMAN"
-          descripcion="Es un gato con corbata y parece ser humano pero es un gato"
-        />
-
-        <Card
-          titulo="POSIGATO"
-          descripcion="Es un posillo en forma de gato y en un posillo yt no un gato "
-        />
+      <div style={{ padding: "20px" }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </BrowserRouter>
       </div>
-
-      
     </>
   );
 }
