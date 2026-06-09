@@ -12,18 +12,14 @@ Cada carpeta representa una clase o sesión de formación diferente, por lo que 
 
 ```bash
 .
-├── Clase_1/
-├── Clase_2/
-├── Clase_3/
-├── Clase_4/
-├── Clase_5/
-├── Proyecto_Formativo/
+├── LUNES_db_            |FREDY ARDILA
+├── Miercoles_           | SERGIO GARZON
+├── VIERNES_             |JEYSSON CONTRERAS
+├── _____________
+├── _____________
 └── README.md
+
 ```
-
-> **Nota:** Los nombres de las carpetas pueden variar según la actividad o temática desarrollada durante la formación.
-
----
 
 ## Contenido
 
@@ -66,8 +62,9 @@ Centralizar y organizar todas las evidencias de aprendizaje desarrolladas durant
 ---
 
 ## Autor
-
+#### Rubiel Rodriguez Rodriguez 
 **Aprendiz SENA**
+**ADSO**
 
 ---
 
