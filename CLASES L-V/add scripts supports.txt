@@ -1,0 +1,73 @@
+add scripts supports
+
+CLIENTE:
+CREATE TABLE cliente (
+    cliente_doc VARCHAR(20) PRIMARY KEY,
+    cliente_nombre VARCHAR(100) NOT NULL,
+    cliente_email VARCHAR(100) UNIQUE,
+    cliente_telefono VARCHAR(20),
+    cliente_direccion VARCHAR(200)
+);
+VENDEDOR:
+CREATE TABLE vendedor (
+    vendedor_id SERIAL PRIMARY KEY,
+    vendedor_nombre VARCHAR(100) NOT NULL,
+    vendedor_zona VARCHAR(50)
+);
+CATEGORIA:
+CREATE TABLE categoria (
+    categoria_id SERIAL PRIMARY KEY,
+    nombre_categoria VARCHAR(50) UNIQUE NOT NULL
+);
+PRODUCTO:
+CREATE TABLE producto (
+    producto_codigo VARCHAR(20) PRIMARY KEY,
+    producto_nombre VARCHAR(100) NOT NULL,
+
+    categoria_id INT NOT NULL,
+
+    FOREIGN KEY (categoria_id)
+    REFERENCES categoria(categoria_id)
+);
+VENTA:
+CREATE TABLE venta (
+
+    venta_id INT PRIMARY KEY,
+
+    fecha_venta DATE NOT NULL,
+
+    cliente_doc VARCHAR(20) NOT NULL,
+
+    vendedor_id INT NOT NULL,
+
+    metodo_pago VARCHAR(50),
+
+    FOREIGN KEY (cliente_doc)
+        REFERENCES cliente(cliente_doc),
+
+    FOREIGN KEY (vendedor_id)
+        REFERENCES vendedor(vendedor_id)
+);
+DETALLE VENTA:
+CREATE TABLE detalle_venta (
+
+    detalle_id SERIAL PRIMARY KEY,
+
+    venta_id INT NOT NULL,
+
+    producto_codigo VARCHAR(20) NOT NULL,
+
+    cantidad INT NOT NULL CHECK(cantidad > 0),
+
+    precio_unitario NUMERIC(10,2)
+        CHECK(precio_unitario >= 0),
+
+    descuento NUMERIC(10,2)
+        DEFAULT 0,
+
+    FOREIGN KEY (venta_id)
+        REFERENCES venta(venta_id),
+
+    FOREIGN KEY (producto_codigo)
+        REFERENCES producto(producto_codigo)
+);
