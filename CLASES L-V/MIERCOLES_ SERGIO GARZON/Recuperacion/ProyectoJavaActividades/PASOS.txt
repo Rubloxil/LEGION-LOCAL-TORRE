@@ -1,0 +1,22 @@
+PASOS PARA EJECUTAR
+
+1. Abrir VS Code.
+2. Abrir la carpeta del proyecto.
+3. Abrir terminal.
+4. Ejecutar:
+
+javac *.java
+
+5. Ejecutar actividades:
+
+ACTIVIDAD 1
+java BibliotecaSistema
+java Actividad1ParteB
+
+ACTIVIDAD 2
+java PedidoServiceAlto
+java PedidoServiceBajo
+
+ACTIVIDAD 3
+java PagoServiceMalo
+java PagoServiceBueno

@@ -1,0 +1,21 @@
+ACTIVIDAD 1
+Parte A:
+Baja cohesion porque una sola clase hace muchas tareas.
+
+Parte B:
+Alta cohesion porque cada clase tiene una responsabilidad.
+
+ACTIVIDAD 2
+Parte A:
+Existe alto acoplamiento porque PedidoServiceAlto depende directamente de EmailService.
+
+Parte B:
+Existe bajo acoplamiento porque se usa una interfaz.
+
+ACTIVIDAD 3
+Parte A:
+Existe baja cohesion y alto acoplamiento debido al uso de if.
+
+Parte B:
+Existe alta cohesion y bajo acoplamiento.
+Se aplica el principio Open/Closed de SOLID.

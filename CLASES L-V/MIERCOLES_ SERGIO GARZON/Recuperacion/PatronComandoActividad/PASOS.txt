@@ -1,0 +1,21 @@
+PASOS PARA EJECUTAR EL PROYECTO
+
+1. Descomprimir el archivo.
+2. Abrir la carpeta en VS Code.
+3. Abrir la terminal.
+4. Compilar:
+
+javac *.java
+
+5. Ejecutar:
+
+java Usuario
+
+RESULTADO ESPERADO:
+
+El televisor está encendido.
+Aplicación abierta.
+Televisor conectado al WiFi.
+Fecha actualizada correctamente.
+El volumen ha aumentado.
+El televisor está apagado.
