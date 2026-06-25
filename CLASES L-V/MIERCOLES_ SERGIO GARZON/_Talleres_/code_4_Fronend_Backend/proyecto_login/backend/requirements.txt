@@ -1,0 +1,8 @@
+# Librerías necesarias para el backend (PASO 2)
+# Instalar con: pip install -r requirements.txt
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+mysql-connector-python
+pydantic
