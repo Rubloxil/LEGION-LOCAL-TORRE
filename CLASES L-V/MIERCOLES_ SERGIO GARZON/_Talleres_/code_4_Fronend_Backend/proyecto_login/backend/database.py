@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Parámetros de conexión — ajusta usuario, contraseña y nombre de BD
-DATABASE_URL = "mysql+mysqlconnector://root:@localhost:3306/(db_login)"
+DATABASE_URL = "mysql+mysqlconnector://root:@localhost:3306/db_login"
 
 engine = create_engine(DATABASE_URL)
 
