@@ -1,1 +1,0 @@
--- Copiar script original de la guía
