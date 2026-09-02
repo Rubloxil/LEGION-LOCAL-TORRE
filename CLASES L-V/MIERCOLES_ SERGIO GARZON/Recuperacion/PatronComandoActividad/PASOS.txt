@@ -1,7 +1,4 @@
 PASOS PARA EJECUTAR EL PROYECTO
-
-1. Descomprimir el archivo.
-2. Abrir la carpeta en VS Code.
 3. Abrir la terminal.
 4. Compilar:
 
